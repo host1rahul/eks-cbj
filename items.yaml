@@ -1,0 +1,19 @@
+removeStrategy:
+  rbac: SYNC
+  items: NONE
+items:
+- kind: freeStyle
+  name: Demo
+  blockBuildWhenDownstreamBuilding: false
+  blockBuildWhenUpstreamBuilding: false
+  builders:
+  - batchFile:
+      command: echo "test"
+  concurrentBuild: false
+  description: ''
+  disabled: false
+  displayName: Demo
+  scm:
+    none: {}
+  scmCheckoutStrategy:
+    standard: {}
